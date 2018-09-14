@@ -1,0 +1,13 @@
+#leftSide {
+    width: 50%;
+    float: left;
+}
+
+#addButton {
+    width: 50%;
+    float: left;
+}
+
+#gifDiv {
+    float:left;
+}
