@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:900" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="app.js"></script>
@@ -14,15 +15,23 @@
 </head>
 
 <body>
-    <h1>Get Parks & Recreation GIFs</h1>
-    <div id="leftSide">
-        <h3>Choose your favorite character:</h3>
-        <div id="buttonDiv"></div>
-    </div>
-    <div id="addButton">
-        <p>Add a character:</p>
-        <input type="text" id="toAdd">
-        <button id="add">Add!</button>
+    <div class="jumbotron text-center">
+        <h1>Get Parks & Recreation GIFs</h1>
+        <br />
+        <div id="leftSide">
+            <h3>Choose your favorite character:</h3>
+            <div id="buttonDiv"></div>
+        </div>
+        <br />
+        <div id="addButton">
+            <form>
+                <div class="form-group">
+                    <label for="toAdd">Add a character:</label>
+                    <input type="text" id="toAdd">
+                    <button type="submit" class="btn" id="add">Add!</button>
+                </div>
+            </form>
+        </div>
     </div>
     <div id="gifDiv" class="card-columns"></div>
 </body>

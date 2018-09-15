@@ -11,7 +11,7 @@ var keywords = ["Leslie Knope","Ron Swanson","April Ludgate","Ann Perkins","Tom 
 function makeButtons() {
     for(i=0; i<keywords.length; i++) {
         var b = $("<button>");
-        b.attr("class","gifQuery")
+        b.attr("class","gifQuery btn m-1")
         b.text(keywords[i]);
         $("#buttonDiv").append(b);
     }
@@ -70,6 +70,7 @@ $(document).on("click", "#add", function(event) {
     var newKeyword = $("#toAdd").val();
     console.log(newKeyword);
     keywords.push(newKeyword);
+    $("#toAdd").val("");
     $("#buttonDiv").empty();
     makeButtons();
 });

@@ -1,13 +1,4 @@
-#leftSide {
-    width: 50%;
-    float: left;
-}
-
-#addButton {
-    width: 50%;
-    float: left;
-}
-
-#gifDiv {
-    float:left;
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: #65AE49;
 }
